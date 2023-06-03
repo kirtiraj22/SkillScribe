@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
+import Features from "./Features";
 import { Button, Img, Input, Text } from "components";
 
 const WebPage = () => {
@@ -11,6 +12,7 @@ const WebPage = () => {
           <Navbar />
           <HeroSection />
         </div>
+        <Features />
       </div>
     </>
   );
