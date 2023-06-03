@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
+import TryNow from "./TryNow";
+import Footer from "./Footer";
+import Contact from "./Contact";
 import Features from "./Features";
-import { Button, Img, Input, Text } from "components";
 
 const WebPage = () => {
   return (
@@ -12,7 +14,10 @@ const WebPage = () => {
           <Navbar />
           <HeroSection />
         </div>
+        <TryNow />
         <Features />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

@@ -1,82 +1,109 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
-import { Text } from "components";
+import { Typography } from "@material-tailwind/react";
+import { Text, Button, Img } from "components";
 const Features = () => {
   return (
-    <div className="bg-blue_100 flex flex-col font-chalkboardse md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around max-w-[1512px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full">
-      <Typography
-        className="font-bold uppercase text-4xl text-blue_gray_900"
-        variant="h2"
-        as="h2"
-      >
-        Features
-      </Typography>
-      <div className="flex md:flex-col flex-row md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around">
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[300px]">
-          <CardBody>
-            <Typography
-              variant="h4"
-              color="blue-gray"
-              className="mb-2 text-center"
+    <div className="flex md:flex-col flex-row font-chalkboardse md:gap-10 gap-[149px] h-[550px] md:h-auto items-center justify-center max-w-[1511px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full">
+      <Img
+        src="images/img_group_black_900_404x439.svg"
+        className="h-[404px] w-[439px]"
+        alt="group_Fourteen"
+      />
+      <div className="flex sm:flex-1 flex-col gap-[25px] h-80 md:h-auto items-start justify-center px-1 py-[25px] w-auto sm:w-full">
+        <Typography
+          variant="h4"
+          color="blue-gray"
+          className="mb-2 text-center text-[40px]"
+        >
+          Why Choose Us?
+        </Typography>
+
+        <ul className="mb-8 space-y-4 text-left text-gray-900 text-[25px] dark:text-gray-400">
+          <li className="flex items-center space-x-3">
+            <svg
+              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Resume Builder
-            </Typography>
-            <Typography className="py-[10px] font-medium text-lg text-center px-[10px]">
-              The Resume Builder feature of SkillScribe empowers you to
-              effortlessly create professional and polished resumes. With a
-              user-friendly interface and a wide selection of customizable
-              templates, you can tailor your resume to highlight your unique
-              skills, experiences, and achievements.
-            </Typography>
-          </CardBody>
-          <CardFooter className="pt-0 flex justify-center">
-            <a href="#" className="inline-block">
-              <Button
-                variant="text"
-                className="flex items-center gap-2 text-lg"
-              >
-                Try Now{" "}
-                <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
-              </Button>
-            </a>
-          </CardFooter>
-        </Card>
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[300px]">
-          <CardBody>
-            <Typography
-              variant="h4"
-              color="blue-gray"
-              className="mb-2 text-center"
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>No Login Required</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <svg
+              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              GitHub Analyzer
-            </Typography>
-            <Typography className="py-[10px] font-medium text-lg text-center px-[10px]">
-              SkillScribe's GitHub Analyzer provides insightful analytics and
-              visualization for your GitHub profile. Track your progress,
-              showcase top projects, and highlight coding expertise with ease.
-              our GitHub Analyzer empowers you to unlock the full potential of
-              your GitHub presence and demonstrate your skills with confidence.
-            </Typography>
-          </CardBody>
-          <CardFooter className="pt-0 flex justify-center">
-            <a href="#" className="inline-block">
-              <Button
-                variant="text"
-                className="flex items-center gap-2 text-lg"
-              >
-                Try Now{" "}
-                <ArrowLongRightIcon strokeWidth={2} className="h-5 w-5" />
-              </Button>
-            </a>
-          </CardFooter>
-        </Card>
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Free Resume Creation</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <svg
+              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Github Visualizer and Resume Builder in One Platform</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <svg
+              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Multiple themes for Resume</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <svg
+              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Insights and Analytics</span>
+          </li>
+        </ul>
+
+        <Button
+          className="cursor-pointer font-normal h-[45px] lowercase text-blue_gray_900 text-center text-lg w-[147px]"
+          shape="RoundedBorder10"
+          size="sm"
+          variant="OutlineBlack900"
+        >
+          Learn more
+        </Button>
       </div>
     </div>
   );

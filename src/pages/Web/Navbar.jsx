@@ -12,22 +12,13 @@ const Navbar = () => {
           SkillScribe
         </Text>
         <div className="flex sm:flex-1 flex-row font-chalkboardse items-center justify-evenly w-[45%] sm:w-full">
-          <Text
-            className="lowercase text-blue_gray_900 font-semibold"
-            variant="body1"
-          >
-            Services
+          <Text className="text-blue_gray_900 font-semibold" variant="body1">
+            Demo
           </Text>
-          <Text
-            className="lowercase text-blue_gray_900 font-semibold"
-            variant="body1"
-          >
-            Team
+          <Text className="text-blue_gray_900 font-semibold" variant="body1">
+            Features
           </Text>
-          <Text
-            className="lowercase text-blue_gray_900 font-semibold"
-            variant="body1"
-          >
+          <Text className="text-blue_gray_900 font-semibold" variant="body1">
             Contact
           </Text>
         </div>
