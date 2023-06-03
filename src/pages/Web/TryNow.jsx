@@ -11,7 +11,7 @@ import { Text } from "components";
 import { Link } from "react-router-dom";
 const TryNow = () => {
   return (
-    <div className="bg-blue_100 flex flex-col font-chalkboardse md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around max-w-[1512px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full">
+    <div className="bg-blue_100 flex flex-col font-chalkboardse md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around max-w-[1512px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full mt-[30px]">
       <Typography
         className="font-bold uppercase text-4xl text-blue_gray_900"
         variant="h2"
@@ -20,7 +20,7 @@ const TryNow = () => {
         Try Now
       </Typography>
       <div className="flex md:flex-col flex-row md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around">
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px]">
+        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
@@ -49,7 +49,7 @@ const TryNow = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px]">
+        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
@@ -65,7 +65,7 @@ const TryNow = () => {
               enables you to track your progress,highlight your top projects.
             </Typography>
           </CardBody>
-          <CardFooter className="pt-0 flex justify-center">
+          <CardFooter className="pt-0 flex justify-center mt-8">
             <Link to="/analyzer">
               <Button
                 variant="text"

@@ -8,14 +8,19 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^1.4.0",
+    "cleanup-create-react-app": "^1.0.4",
     "dotenv": "^16.0.1",
     "heroicons": "^2.0.18",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
+    "react-chartjs-2": "^5.2.0",
     "react-datepicker": "^4.5.0",
     "react-dom": "17.0.2",
+    "react-feather": "^2.0.10",
     "react-router-dom": "6.0.2",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "react-to-print": "^2.14.12"
   },
   "scripts": {
     "start": "vite",
