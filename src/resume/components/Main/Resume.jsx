@@ -305,7 +305,10 @@ const Resume = forwardRef((props, ref) => {
 
   return (
     <div ref={ref}>
-      <div ref={containerRef} className={styles.container}>
+      <div
+        ref={containerRef}
+        className="flex min-w-[700px] min-h-[900px] max-w-[850px] my-0 mx-auto flex-1 h-fit shadow-md shadow-black flex-col gap-[30px] p-[30px]"
+      >
         <div className={styles.header}>
           <p className={styles.heading}>{info.basicInfo?.detail?.name}</p>
           <p className={styles.subHeading}>{info.basicInfo?.detail?.title}</p>

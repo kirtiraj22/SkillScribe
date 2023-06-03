@@ -62,9 +62,11 @@ function Body() {
   });
 
   return (
-    <div className={styles.container}>
-      <p className={styles.heading}>Resume Builder</p>
-      <div className={styles.toolbar}>
+    <div className="flex flex-col items-center gap-[30px] pt-0">
+      <p className="cursor-pointer font-bold text-[2.1rem] bg-blue_100 w-full text-center">
+        Resume Builder
+      </p>
+      <div className="w-full flex gap-[40px] justify-between items-center flex-wrap flex-row">
         <div className={styles.colors}>
           {colors.map((item) => (
             <span
@@ -93,7 +95,8 @@ function Body() {
         <ReactToPrint
           trigger={() => {
             return (
-              <button>
+              <button className="py-2 px-4 rounded-md text-black outline-none border-0 font-medium text-[1rem] gap-[5px] items-center cursor-pointer bg-blue_100 flex flex-row">
+                {/* <button className="rounded-xl bg-blue_100 p-[20px] w-[150px] flex flex-row gap-[10px] items-center justify-center"> */}
                 Download <ArrowDown />
               </button>
             );
@@ -101,7 +104,7 @@ function Body() {
           content={() => resumeRef.current}
         />
       </div>
-      <div className={styles.main}>
+      <div className="flex gap-[20px] w-full justify-between">
         <Editor
           sections={sections}
           information={resumeInformation}

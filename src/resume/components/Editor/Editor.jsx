@@ -478,8 +478,8 @@ function Editor(props) {
         }));
         break;
       }
-      default: 
-        return null
+      default:
+        return null;
     }
   };
 
@@ -534,9 +534,7 @@ function Editor(props) {
       companyName: activeInfo?.details
         ? activeInfo.details[0]?.companyName || ""
         : "",
-      college: activeInfo?.details
-        ? activeInfo.details[0]?.college || ""
-        : "",
+      college: activeInfo?.details ? activeInfo.details[0]?.college || "" : "",
       location: activeInfo?.details
         ? activeInfo.details[0]?.location || ""
         : "",
@@ -592,7 +590,7 @@ function Editor(props) {
   }, [activeDetailIndex]);
 
   return (
-    <div className={styles.container}>
+    <div className="flex min-w-[550px] min-h-[450px] max-w-[750px] flex-col gap-[30px] shadow-black shadow-md pt-[5px]">
       <div className={styles.header}>
         {Object.keys(sections)?.map((key) => (
           <div
@@ -607,7 +605,7 @@ function Editor(props) {
         ))}
       </div>
 
-      <div className={styles.body}>
+      <div className="p-[30px] flex flex-col gap-[20px] pt-0">
         <InputControl
           label="Title"
           placeholder="Enter section title"
@@ -649,7 +647,12 @@ function Editor(props) {
 
         {generateBody()}
 
-        <button onClick={handleSubmission}>Save</button>
+        <button
+          onClick={handleSubmission}
+          className="w-fit py-2 px-4 rounded-md text-black bg-blue_100 outline-none border-0 font-semibold text-[1rem] flex gap-[5px] cursor-pointer items-center"
+        >
+          Save
+        </button>
       </div>
     </div>
   );
