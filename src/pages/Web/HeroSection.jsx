@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Img, Text } from "components";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const HeroSection = () => {
   return (
     <div className="font-chalkboardse md:h-[1602px] sm:h-[668px] h-[779px] max-w-[1446px] mx-auto p-[19px] md:px-5 relative w-full">
@@ -412,14 +413,16 @@ const HeroSection = () => {
           SkillScribe provides the tools and features to help you stand out and
           make a lasting impact in your professional journey.
         </Text>
-        <Button
-          className="cursor-pointer font-normal h-[50px] lowercase text-blue_gray_900 text-center hover:bg-blue_100 duration-500 text-lg w-[147px]"
-          shape="RoundedBorder10"
-          size="sm"
-          variant="OutlineBlack900"
-        >
-          Get started
-        </Button>
+        <AnchorLink href="#demo">
+          <Button
+            className="cursor-pointer font-normal h-[50px] lowercase text-blue_gray_900 text-center hover:bg-blue_100 duration-500 text-lg w-[147px]"
+            shape="RoundedBorder10"
+            size="sm"
+            variant="OutlineBlack900"
+          >
+            Get started
+          </Button>
+        </AnchorLink>
       </div>
     </div>
   );
