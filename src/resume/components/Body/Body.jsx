@@ -1,15 +1,15 @@
 import React, { useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
 import { ArrowDown } from "react-feather";
-
+import { useEffect } from "react";
 import Editor from "../Editor/Editor";
 import Resume from "../Main/Resume";
 
 import styles from "./Body.module.css";
 
 function Body() {
-  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
-  const fonts = ["Open Sans", "Montserrat", "Poppins", "Nunito"];
+  const colors = ["#239ce2", "#000000", "#0bc5ea", "#48bb78"];
+  const fonts = ["Open Sans", "Poppins"];
   const sections = {
     basicInfo: "Basic Info",
     workExp: "Work Experience",
@@ -60,10 +60,13 @@ function Body() {
       detail: "",
     },
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="flex flex-col items-center gap-[30px] pt-0">
-      <p className="cursor-pointer font-bold text-[2.1rem] bg-blue_100 w-full text-center">
+    <div className="flex flex-col items-center gap-[30px] pt-0  bg-blue_100">
+      <p className="cursor-pointer font-bold text-[2.1rem] w-full text-center">
         Resume Builder
       </p>
       <div className="w-full flex gap-[40px] justify-between items-center flex-wrap flex-row">
@@ -95,7 +98,7 @@ function Body() {
         <ReactToPrint
           trigger={() => {
             return (
-              <button className="py-2 px-4 rounded-md text-black outline-none border-0 font-medium text-[1rem] gap-[5px] items-center cursor-pointer bg-blue_100 flex flex-row">
+              <button className="py-2 px-4 rounded-md text-black outline-none border-0 font-medium text-[1rem] gap-[5px] items-center cursor-pointer bg-white flex flex-row">
                 {/* <button className="rounded-xl bg-blue_100 p-[20px] w-[150px] flex flex-row gap-[10px] items-center justify-center"> */}
                 Download <ArrowDown />
               </button>

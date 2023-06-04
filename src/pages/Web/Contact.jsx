@@ -2,7 +2,10 @@ import React from "react";
 import { Button, Img, Input, Text } from "components";
 const Contact = () => {
   return (
-    <div className="bg-blue_100 flex md:flex-col flex-row font-chalkboardse gap-[50px] h-[805px] md:h-auto items-center justify-center max-w-[1512px] md:px-10 sm:px-5 px-[50px] py-[100px] w-full">
+    <div
+      className="bg-blue_100 flex md:flex-col flex-row font-chalkboardse gap-[50px] h-[805px] md:h-auto items-center justify-center max-w-[1512px] md:px-10 sm:px-5 px-[50px] py-[100px] w-full"
+      id="contact"
+    >
       <div className="flex sm:flex-1 flex-col gap-8 items-center border-2 border-black rounded-xl p-[50px] justify-center w-[479px] sm:w-full">
         <Text
           className="lowercase text-blue_gray_900 w-[244px]"

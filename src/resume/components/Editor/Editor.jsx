@@ -590,7 +590,7 @@ function Editor(props) {
   }, [activeDetailIndex]);
 
   return (
-    <div className="flex min-w-[550px] min-h-[450px] max-w-[750px] flex-col gap-[30px] shadow-black shadow-md pt-[5px]">
+    <div className="flex min-w-[550px] min-h-[450px] max-w-[750px] flex-col gap-[30px] shadow-black shadow-md pt-[5px] bg-blue_100">
       <div className={styles.header}>
         {Object.keys(sections)?.map((key) => (
           <div
@@ -649,7 +649,7 @@ function Editor(props) {
 
         <button
           onClick={handleSubmission}
-          className="w-fit py-2 px-4 rounded-md text-black bg-blue_100 outline-none border-0 font-semibold text-[1rem] flex gap-[5px] cursor-pointer items-center"
+          className="w-fit py-2 px-4 rounded-md text-black border-black bg-blue_100 outline-none border font-semibold text-[1rem] flex gap-[5px] cursor-pointer items-center"
         >
           Save
         </button>

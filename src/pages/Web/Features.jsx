@@ -3,7 +3,10 @@ import { Typography } from "@material-tailwind/react";
 import { Text, Button, Img } from "components";
 const Features = () => {
   return (
-    <div className="flex md:flex-col flex-row font-chalkboardse md:gap-10 gap-[149px] h-[550px] md:h-auto items-center justify-center max-w-[1511px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full">
+    <div
+      className="flex md:flex-col flex-row font-chalkboardse md:gap-10 gap-[149px] h-[550px] md:h-auto items-center justify-center max-w-[1511px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full"
+      id="features"
+    >
       <Img
         src="images/img_group_black_900_404x439.svg"
         className="h-[404px] w-[439px]"
