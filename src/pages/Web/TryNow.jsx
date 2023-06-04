@@ -23,7 +23,7 @@ const TryNow = () => {
         Try Now
       </Typography>
       <div className="flex md:flex-col flex-row md:gap-10 gap-[77px] h-[500px] md:h-auto items-center justify-around">
-        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[450px] p-[20px]">
+        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[350px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
@@ -52,7 +52,7 @@ const TryNow = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[450px] p-[20px]">
+        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[350px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
