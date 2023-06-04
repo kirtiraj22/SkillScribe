@@ -6,6 +6,7 @@ import Editor from "../Editor/Editor";
 import Resume from "../Main/Resume";
 
 import styles from "./Body.module.css";
+import { Link } from "react-router-dom";
 
 function Body() {
   const colors = ["#239ce2", "#000000", "#0bc5ea", "#48bb78"];
@@ -66,9 +67,16 @@ function Body() {
 
   return (
     <div className="flex flex-col items-center gap-[30px] pt-0  bg-blue_100">
-      <p className="cursor-pointer font-bold text-[2.1rem] w-full text-center">
-        Resume Builder
-      </p>
+      <div className="flex flex-row justify-around w-full items-center">
+        <Link to="/">
+          <p className="cursor-pointer font-semibold text-[1.5rem] p-2 rounded-xl ml-10 text-left">
+            Home
+          </p>
+        </Link>
+        <p className="cursor-pointer font-bold text-[2.1rem] w-full text-center">
+          Resume Builder
+        </p>
+      </div>
       <div className="w-full flex gap-[40px] justify-between items-center flex-wrap flex-row">
         <div className={styles.colors}>
           {colors.map((item) => (

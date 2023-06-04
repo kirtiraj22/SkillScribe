@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const TryNow = () => {
   return (
     <div
-      className="bg-blue_100 flex flex-col font-chalkboardse md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around max-w-[1512px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full mt-[30px]"
+      className="bg-blue_100 flex flex-col font-chalkboardse md:gap-10 gap-[77px] h-[650px] md:h-auto items-center justify-around max-w-[1512px] md:px-10 sm:px-5 px-[100px] py-[50px] w-full mt-[30px] rounded"
       id="demo"
     >
       <Typography
@@ -22,8 +22,8 @@ const TryNow = () => {
       >
         Try Now
       </Typography>
-      <div className="flex md:flex-col flex-row md:gap-10 gap-[77px] h-[537px] md:h-auto items-center justify-around">
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px] p-[20px]">
+      <div className="flex md:flex-col flex-row md:gap-10 gap-[77px] h-[500px] md:h-auto items-center justify-around">
+        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[450px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
@@ -52,7 +52,7 @@ const TryNow = () => {
             </Link>
           </CardFooter>
         </Card>
-        <Card className="mt-2 w-96 border border-black rounded-lg h-[350px] p-[20px]">
+        <Card className="mt-[-60px] w-96 border border-black rounded-lg h-[450px] p-[20px]">
           <CardBody>
             <Typography
               variant="h4"
